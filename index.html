@@ -2,94 +2,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Michael Cooper – Cloud & Identity Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael A. Cooper | Tech Projects</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9; color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background: #222; color: white; padding: 2rem;
+      background: #fff;
+      padding: 20px 0;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1 { margin: 0; }
-    main {
-      padding: 2rem;
-      max-width: 800px;
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0366d6;
+      font-weight: bold;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    a {
-      display: block;
-      margin: 0.5rem 0;
-      font-size: 1rem;
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 2rem;
+    section {
+      margin-bottom: 40px;
     }
     h2 {
-      margin-top: 2rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
+      color: #111;
     }
-    ul {
-      padding-left: 1.2rem;
+    .project {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .project a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    .contact a {
+      display: block;
+      margin-top: 5px;
+      color: #0366d6;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Michael A. Cooper</h1>
-    <p>Cloud Administrator | Identity & Access Management | Azure Security</p>
+    <h1>Michael A. Cooper | Tech Projects</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="MichaelCooper_Resume.pdf" target="_blank">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <main>
-    <h2>📂 Project Portfolio</h2>
-    <a href="https://github.com/miadco/AZ-104-Labs" target="_blank">AZ-104: Azure Administrator Labs</a>
-    <a href="https://github.com/miadco/SC-300-Identity-and-Access-Labs" target="_blank">SC-300: Identity & Access Administrator Labs</a>
-    <a href="https://github.com/miadco/AZ-500-Security-Labs" target="_blank">AZ-500: Azure Security Labs</a>
 
-    <h2>🎓 Certifications</h2>
-    <strong>Core Certifications:</strong>
-    <ul>
-      <li>CompTIA A+ ce Certification (2024–2027)</li>
-      <li>Google IT Support Specialization</li>
-      <li>Google Cybersecurity Specialization</li>
-      <li>Cisco Junior Cybersecurity Analyst Career Path</li>
-    </ul>
-    <h2>📄 Resume</h2>
-  <p>
-    <a href="MichaelCooper_Resumegit.pdf" target="_blank">
-    Download My Resume (PDF)
-    </a>
-  </p>
+  <div class="container">
+    <section id="about">
+      <h2>👋 About Me</h2>
+      <p>
+        I'm Michael A. Cooper, a passionate tech learner pivoting into IT support, cloud, and identity access management.
+        I built this site to showcase my hands-on labs, project experience, and growth mindset as I transition into the tech industry.
+      </p>
+    </section>
 
+    <section id="projects">
+      <h2>🔐 Projects</h2>
 
-    <strong>Tool-Specific & Platform Training:</strong>
-    <ul>
-      <li>Jira Fundamentals Badge</li>
-      <li>Jira Service Management Fundamentals</li>
-      <li>Meta Django Web Framework</li>
-      <li>Meta Programming in Python</li>
-      <li>Meta Introduction to Databases</li>
-      <li>Codecademy Code Foundations</li>
-      <li>Coursera Linux Command Line Basics</li>
-    </ul>
+      <div class="project">
+        <h3>SC-300: Microsoft Identity & Access Administrator</h3>
+        <p><strong>Repo:</strong> <a href="https://github.com/miadco/SC-300-Identity-and-Access-Administrator" target="_blank">View on GitHub</a></p>
+        <p><strong>Skills:</strong> Entra ID, Role-based access, Conditional Access, Privileged Identity Management</p>
+        <p><strong>Highlights:</strong> Completed labs using both the Azure Portal and PowerShell, documented thoroughly with screenshots.</p>
+      </div>
 
-    <h2>🔗 Connect</h2>
-    <a href="mailto:mico.cooper@gmail.com" target="_blank">mico.cooper@gmail.com</a>
-    <a href="https://github.com/miadco" target="_blank">GitHub Profile</a>
-    <a href="https://www.linkedin.com/in/1michael-a-cooper/" target="_blank">LinkedIn</a>
-  </main>
-  <footer>
-    <p>&copy; 2025 Michael A. Cooper</p>
-  </footer>
+      <div class="project">
+        <h3>AZ-104: Azure Administrator Associate</h3>
+        <p><strong>Repo:</strong> <a href="https://github.com/miadco/az104labs" target="_blank">View on GitHub</a></p>
+        <p><strong>Skills:</strong> Resource groups, Azure Storage, VM deployment, networking</p>
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <h2>📧 Contact</h2>
+      <p>Email: <a href="mailto:mico.cooper@gmail.com">mico.cooper@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/1michael-a-cooper" target="_blank">LinkedIn</a></p>
+    </section>
+  </div>
 </body>
 </html>
+
